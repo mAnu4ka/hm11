@@ -91,7 +91,8 @@
     height: 780px;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex
+    display: flex;
+    justify-content: space-between;
 }
 
 .promo__menu {
@@ -122,14 +123,18 @@
 }
 
 .promo__content {
-    width: calc(100% - 600px)
+    width: calc(100% - 600px);
+    position: absolute;
+    transition: 0.4s ease;
+    top: 100px;
+    left: 300px;
 }
 
 .promo__bg {
     height: 360px;
-    background: url("../bg.jpg") center center/cover no-repeat;
+    background-image: url("../bg.jpg") ;
     background-position: top;
-    padding: 107px 0 0 61px
+    padding: 107px 0 0 61px;
 }
 
 .promo__genre {
@@ -352,5 +357,9 @@
     width: 100%;
     margin-bottom: 10px
 }
-
-/*# sourceMappingURL=style.min.css.map */
+.none{
+    opacity: 0;
+    top:93%;
+    left: 50%;
+    transform:translateX(-50%);
+}
